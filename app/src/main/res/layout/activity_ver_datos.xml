@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerDatos">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Datos del usuario"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ViewPais"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pais"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtPaises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="."
+        android:inputType="textPersonName"
+        android:labelFor="@+id/ViewPais"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/viewNombre"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nombre"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="."
+        android:inputType="textPersonName"
+        android:labelFor="@+id/viewNombre"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/viewTelefono"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Telefono"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="."
+        android:inputType="phone"
+        android:labelFor="@+id/viewTelefono"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/viewNota"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nota"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="."
+        android:inputType="textPersonName"
+        android:labelFor="@+id/viewNota"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Contacto"
+        android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditar"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:src="@drawable/ic_edit" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLlamada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:src="@drawable/ic_call" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:src="@drawable/ic_delete" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fCompartir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        app:srcCompat="@drawable/baseline_share_24" />
+
+
+</LinearLayout>
